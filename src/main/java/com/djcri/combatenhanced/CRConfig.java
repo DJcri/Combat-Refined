@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class CRConfig {
 	@Comment("Disables weak attacks.")
 	public static boolean waDisabled=true;
+	@Comment("Defines the maximum attack cooldown (in terms of percentage of the cooldown bar) below which the attack is considered weak. Values above 1.0 will prevent you from attacking")
+	public static float waPower=1.0f; 
 	@Comment("Removes shield delay.")
 	public static boolean shieldFix=true;
 	@Comment("Swing through grass.")

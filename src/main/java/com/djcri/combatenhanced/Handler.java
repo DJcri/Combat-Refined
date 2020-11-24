@@ -63,7 +63,7 @@ public class Handler {
 	public void onLeftClick(MouseEvent event) {
 		EntityPlayer plr = Minecraft.getMinecraft().player;
 		if (CRConfig.waDisabled && !plr.getHeldItemMainhand().isEmpty() && event.getButton() == 0
-				&& plr.getCooledAttackStrength(0.0F) < 1.0F) {
+				&& plr.getCooledAttackStrength(0.0F) < CRConfig.waPower) {
 			event.setCanceled(true);
 			Minecraft.getMinecraft().gameSettings.keyBindAttack
 					.setKeyBindState(Minecraft.getMinecraft().gameSettings.keyBindAttack.getKeyCode(), false);
